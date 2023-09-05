@@ -46,7 +46,7 @@ class Game:
 
 # Initialize Client Socket
 HOST: str = input("IP: ")
-PORT: int = 12345
+PORT: int = 8080
 
 client = net.Client()
 running = True

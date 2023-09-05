@@ -1,7 +1,7 @@
 import networking as net
 
 HOST: str = input("IP: ")
-PORT: int = 12345
+PORT: int = 8080
 MAX_CONNECTIONS = 8
 
 server = net.Server()

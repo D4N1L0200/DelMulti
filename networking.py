@@ -5,7 +5,7 @@ import threading
 class Server:
     def __init__(self) -> None:
         self.hostname: str = "127.0.0.1"
-        self.port: int = 12345
+        self.port: int = 8080
         self.max_connections: int = 2
         self.socket: socket = None
         self.clients: dict = {}
@@ -85,7 +85,7 @@ class Server:
 class Client:
     def __init__(self) -> None:
         self.hostname: str = "127.0.0.1"
-        self.port: int = 12345
+        self.port: int = 8080
         self.socket: socket = None
         self.client_id: int = 0
         self.receive_thread: threading.Thread = threading.Thread()
