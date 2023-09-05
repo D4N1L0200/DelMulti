@@ -45,8 +45,8 @@ class Game:
 
 
 # Initialize Client Socket
-HOST: str = input("IP: ")
-PORT: int = 8080
+HOST: str = input("IP (127.0.0.1): ")
+PORT: str = input("Port (8080): ")
 
 client = net.Client()
 running = True

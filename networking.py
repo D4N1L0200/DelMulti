@@ -11,15 +11,24 @@ class Server:
         self.clients: dict = {}
         print("Server initializing...")
 
-    def init_socket(self, hostname: str, port: int, max_connections: int = 2) -> None:
+    def init_socket(self, hostname: str, port: str, max_connections: int = 2) -> bool:
         if hostname:
             self.hostname = hostname
         if port:
-            self.port = port
+            try:
+                self.port = int(port)
+            except ValueError:
+                print("Not a valid port.")
+                return False
         self.max_connections = max_connections
-        self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.socket.bind((self.hostname, self.port))
+        try:
+            self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            self.socket.bind((self.hostname, self.port))
+        except socket.gaierror:
+            print("Not a valid IP.")
+            return False
         print(f"Server socket bound on {self.hostname}:{self.port}")
+        return True
 
     def handle_client(self, client_socket: socket, current_client: int) -> None:
         clientid = current_client
@@ -92,11 +101,11 @@ class Client:
         self.current_data: list = []
         print("Client initializing...")
 
-    def init_socket(self, hostname: str, port: int) -> bool:
+    def init_socket(self, hostname: str, port: str) -> bool:
         if hostname:
             self.hostname = hostname
         if port:
-            self.port = port
+            self.port = int(port)
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         try:
             self.socket.connect((self.hostname, self.port))

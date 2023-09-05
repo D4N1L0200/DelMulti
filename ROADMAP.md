@@ -2,13 +2,13 @@
 
 This document outlines the planned features and updates for DelNet.
 
-## Version 0.1.1 (Upcoming Release)
+## Version 0.1.1 ([Released](CHANGELOG.md))
 
-- [ ] Add safe checking to the server IP selection.
+- [x] Add safe checking to the server IP selection.
   - Currently crashes if a unavaliable IP has been typed.
-- [ ] Add option to type the server port.
+- [x] Add option to type the server port.
   - Currently only uses 8080.
-- [ ] Show the default value for IP and port.
+- [x] Show the default value for IP and port.
 
 ## Future Ideas
 
