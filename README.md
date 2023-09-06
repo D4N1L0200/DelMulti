@@ -46,8 +46,7 @@ If you prefer to build the project from source code, follow these steps:
 
 ## <a id="changelog-and-roadmap"></a> Changelog and Roadmap
 
-- For a detailed list of changes and updates, please refer to the [Changelog](CHANGELOG.md).
-- For a list of planned updates, features and bugfixes, please refer to the [Roadmap](ROADMAP.md).
+- For a detailed list of changes, updates, planned features and bugfixes, please refer to the [Changelog and Roadmap](CHANGELOG-ROADMAP.md).
 
 ## Contributing
 
