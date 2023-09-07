@@ -19,7 +19,7 @@ This document provides a combined view of the project's changelog and roadmap, s
 
 - [ ] Fully separate the networking from the actual game logic.
 - [ ] Update and organize the message codes into another file.
-- [ ] Organize all project files (creating a "src" folder)
+- [x] Organize all project files (creating a "src" folder)
 
 ## Version 0.3.0 (Planned)
 
