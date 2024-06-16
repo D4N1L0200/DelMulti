@@ -1,4 +1,4 @@
-# DelNet
+# DelMulti
 
 This project is a simple Server-Client system developed in Python using sockets and Pygame. It enables multiple clients to connect to a server and interact with each other by controlling movable squares on a shared canvas. The primary focus of the project is to provide a multiplayer framework, with each player represented as a square that can be moved using the WASD keys. While the core functionality centers around movable squares, additional features can be added to enhance gameplay.
 
@@ -13,11 +13,11 @@ This project is a simple Server-Client system developed in Python using sockets 
 
 ## Installation
 
-You have two options for installing and running DelNet:
+You have two options for installing and running DelMulti:
 
 ### Option 1: Using Pre-built Executables (Recommended)
 
-1. Visit the [Releases](https://github.com/D4N1L0200/DelNet/releases) page on GitHub.
+1. Visit the [Releases](https://github.com/D4N1L0200/DelMulti/releases) page on GitHub.
 2. Download the latest release, which includes pre-built executables for both the client and server.
 3. Run `server.exe` to start the server.
 4. Run `client.exe` to start a client.
@@ -27,8 +27,8 @@ You have two options for installing and running DelNet:
 
 If you prefer to build the project from source code, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/D4N1L0200/DelNet.git`
-2. Navigate to the project directory: `cd DelNet`
+1. Clone the repository: `git clone https://github.com/D4N1L0200/DelMulti.git`
+2. Navigate to the project directory: `cd DelMulti`
 3. Install dependencies: `pip install pygame`
 4. Build the executables? `build.bat`
 5. Start the server: `.\dist\server.exe`
